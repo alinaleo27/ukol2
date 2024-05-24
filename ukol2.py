@@ -36,7 +36,7 @@ try:
 
     try:
         with open("kocici_fakta.json", mode="w", encoding="utf-8") as file:
-            json.dump(numbered_facts, file, indent=4)
+            json.dump(numbered_facts, file, indent=2)
     except IOError as e:
         print(f"Chyba pri ukladani do souboru: {e}")
 
